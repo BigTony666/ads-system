@@ -1,4 +1,4 @@
-package com.bigtony.ad;
+package com.bigtony.ad.ad;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

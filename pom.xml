@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>ad-eureka</module>
+        <module>ad-gateway</module>
     </modules>
 
     <name>ads-system-spring-cloud</name>
@@ -22,7 +23,7 @@
     </parent>
 
     <properties>
-        <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
+        <spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
     </properties>
 
     <dependencies>
