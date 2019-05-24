@@ -1,4 +1,4 @@
-package com.bigtony.ad.keyworkd;
+package com.bigtony.ad.index.keyworkd;
 
 import com.bigtony.ad.index.IndexAware;
 import com.bigtony.ad.utils.CommonUtils;

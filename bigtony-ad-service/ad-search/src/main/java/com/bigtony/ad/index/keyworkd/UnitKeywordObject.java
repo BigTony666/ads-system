@@ -1,4 +1,4 @@
-package com.bigtony.ad.keyworkd;
+package com.bigtony.ad.index.keyworkd;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
