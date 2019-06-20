@@ -14,7 +14,7 @@ public class AdUnitIndex implements IndexAware<Long, AdUnitObject> {
     private static Map<Long, AdUnitObject> objectMap;
     
     static {
-        objectMap = new ConcurrentHashMap<>();
+        objectMap = new ConcurrentHashMap<>(); // thread safe
     }
     
     @Override

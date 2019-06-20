@@ -14,7 +14,7 @@ public class AdPlanIndex implements IndexAware<Long, AdPlanObject> {
     private static Map<Long, AdPlanObject> objectMap;
     
     static {
-        objectMap = new ConcurrentHashMap<>();
+        objectMap = new ConcurrentHashMap<>(); // thread safe
     }
     
     @Override

@@ -18,8 +18,8 @@ import java.util.concurrent.ConcurrentSkipListSet;
 @Component
 public class UnitKeywordIndex implements IndexAware<String, Set<Long>> {
     
-    private static Map<String, Set<Long>> keywordUnitMap;
-    private static Map<Long, Set<String>> unitKeywordMap;
+    private static Map<String, Set<Long>> keywordUnitMap; // Inverted Index
+    private static Map<Long, Set<String>> unitKeywordMap; // Forward Index
     
     static {
         keywordUnitMap = new ConcurrentHashMap<>();
@@ -67,6 +67,7 @@ public class UnitKeywordIndex implements IndexAware<String, Set<Long>> {
     public void update(String key, Set<Long> value) {
         
         // Update Cost is too high, we abandon the update op here
+        // Instead, user can delete first, then add
         log.error("keyword index can not support update");
     }
     

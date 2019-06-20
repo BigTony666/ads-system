@@ -17,12 +17,12 @@ import java.util.stream.Collectors;
 @Component
 public class UnitDistrictIndex implements IndexAware<String, Set<Long>> {
     
-    private static Map<String, Set<Long>> districtUnitMap;
-    private static Map<Long, Set<String>> unitDistrictMap;
+    private static Map<String, Set<Long>> districtUnitMap; // Inverted Index
+    private static Map<Long, Set<String>> unitDistrictMap; // Forward Index
     
     static {
-        districtUnitMap = new ConcurrentHashMap<>();
-        unitDistrictMap = new ConcurrentHashMap<>();
+        districtUnitMap = new ConcurrentHashMap<>(); // thread safe
+        unitDistrictMap = new ConcurrentHashMap<>(); // thread safe
     }
     
     @Override

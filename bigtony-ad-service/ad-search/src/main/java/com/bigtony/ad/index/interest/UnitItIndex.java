@@ -18,10 +18,10 @@ public class UnitItIndex implements IndexAware<String, Set<Long>> {
     
     
     // <itTag, adUnitId set>
-    private static Map<String, Set<Long>> itUnitMap;
+    private static Map<String, Set<Long>> itUnitMap; // Inverted Index
     
     // <unitId, itTag set>
-    private static Map<Long, Set<String>> unitItMap;
+    private static Map<Long, Set<String>> unitItMap; // Forward Index
     
     static {
         itUnitMap = new ConcurrentHashMap<>();

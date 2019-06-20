@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class UnitDistrictObject {
     
+    // key: state-city
     private Long unitId;
     private String state;
     private String city;

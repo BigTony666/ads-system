@@ -36,23 +36,23 @@ public class CreativeUnitIndex implements IndexAware<String, CreativeUnitObject>
     @Override
     public void add(String key, CreativeUnitObject value) {
         log.info("before add: {}", objectMap);
-    
+        
         objectMap.put(key, value);
-    
+        
         Set<Long> unitSet = creativeUnitMap.get(value.getAdId());
         if (CollectionUtils.isEmpty(unitSet)) {
             unitSet = new ConcurrentSkipListSet<>();
             creativeUnitMap.put(value.getAdId(), unitSet);
         }
         unitSet.add(value.getUnitId());
-    
+        
         Set<Long> creativeSet = unitCreativeMap.get(value.getUnitId());
         if (CollectionUtils.isEmpty(creativeSet)) {
             creativeSet = new ConcurrentSkipListSet<>();
             unitCreativeMap.put(value.getUnitId(), creativeSet);
         }
         creativeSet.add(value.getAdId());
-    
+        
         log.info("after add: {}", objectMap);
     }
     
@@ -63,21 +63,21 @@ public class CreativeUnitIndex implements IndexAware<String, CreativeUnitObject>
     
     @Override
     public void delete(String key, CreativeUnitObject value) {
-    
+        
         log.info("before delete: {}", objectMap);
-    
+        
         objectMap.remove(key);
-    
+        
         Set<Long> unitSet = creativeUnitMap.get(value.getAdId());
         if (CollectionUtils.isNotEmpty(unitSet)) {
             unitSet.remove(value.getUnitId());
         }
-    
+        
         Set<Long> creativeSet = unitCreativeMap.get(value.getUnitId());
         if (CollectionUtils.isNotEmpty(creativeSet)) {
             creativeSet.remove(value.getAdId());
         }
-    
+        
         log.info("after delete: {}", objectMap);
     }
     

@@ -19,7 +19,7 @@ public class AdUnitDistrictRequest {
     public static class UnitDistrict {
 
         private Long unitId;
-        private String province;
+        private String state;
         private String city;
     }
 }

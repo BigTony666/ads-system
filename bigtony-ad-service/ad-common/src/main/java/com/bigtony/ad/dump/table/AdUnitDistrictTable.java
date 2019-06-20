@@ -10,6 +10,6 @@ import lombok.NoArgsConstructor;
 public class AdUnitDistrictTable {
 
     private Long unitId;
-    private String province;
+    private String state;
     private String city;
 }
