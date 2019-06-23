@@ -1,13 +1,13 @@
 package com.bigtony.ad.search.vo;
 
-import com.bigtony.ad.search.feature.DistrictFeature;
-import com.bigtony.ad.search.feature.FeatureRelation;
-import com.bigtony.ad.search.feature.ItFeature;
-import com.bigtony.ad.search.feature.KeywordFeature;
-import com.bigtony.ad.search.media.AdSlot;
-import com.bigtony.ad.search.media.App;
-import com.bigtony.ad.search.media.Device;
-import com.bigtony.ad.search.media.Geo;
+import com.bigtony.ad.search.vo.feature.DistrictFeature;
+import com.bigtony.ad.search.vo.feature.FeatureRelation;
+import com.bigtony.ad.search.vo.feature.ItFeature;
+import com.bigtony.ad.search.vo.feature.KeywordFeature;
+import com.bigtony.ad.search.vo.media.AdSlot;
+import com.bigtony.ad.search.vo.media.App;
+import com.bigtony.ad.search.vo.media.Device;
+import com.bigtony.ad.search.vo.media.Geo;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

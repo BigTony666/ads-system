@@ -1,4 +1,4 @@
-package com.bigtony.ad.search.feature;
+package com.bigtony.ad.search.vo.feature;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

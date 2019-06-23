@@ -1,4 +1,4 @@
-package com.bigtony.ad.search.feature;
+package com.bigtony.ad.search.vo.feature;
 
 public enum FeatureRelation {
     

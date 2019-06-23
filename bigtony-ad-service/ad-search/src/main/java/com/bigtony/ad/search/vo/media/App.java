@@ -1,4 +1,4 @@
-package com.bigtony.ad.search.media;
+package com.bigtony.ad.search.vo.media;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
