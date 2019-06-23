@@ -1,6 +1,7 @@
 package com.bigtony.ad.index.district;
 
 import com.bigtony.ad.index.IndexAware;
+import com.bigtony.ad.search.vo.feature.DistrictFeature;
 import com.bigtony.ad.utils.CommonUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections4.CollectionUtils;
@@ -80,5 +81,26 @@ public class UnitDistrictIndex implements IndexAware<String, Set<Long>> {
         }
         
         log.info("UnitDistrictIndex, after delete: {}", unitDistrictMap);
+    }
+    
+    public boolean match(Long adUnitId,
+                         List<DistrictFeature.StateAndCity> districts) {
+        
+        if (unitDistrictMap.containsKey(adUnitId) &&
+                CollectionUtils.isNotEmpty(unitDistrictMap.get(adUnitId))) {
+            
+            Set<String> unitDistricts = unitDistrictMap.get(adUnitId);
+            
+            List<String> targetDistricts = districts.stream()
+                    .map(
+                            d -> CommonUtils.stringConcat(
+                                    d.getState(), d.getCity()
+                            )
+                    ).collect(Collectors.toList());
+            
+            return CollectionUtils.isSubCollection(targetDistricts, unitDistricts);
+        }
+        
+        return false;
     }
 }

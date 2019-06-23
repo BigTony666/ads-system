@@ -13,6 +13,9 @@ public class DistrictFeature {
     
     private List<StateAndCity> districts;
     
+    @Data
+    @NoArgsConstructor
+    @AllArgsConstructor
     public static class StateAndCity {
         
         private String state;
