@@ -40,7 +40,7 @@ public class SearchTest {
         request.setRequestInfo(new SearchRequest.RequestInfo(
                 "req-1",
                 Collections.singletonList(new AdSlot(
-                        "ad-x", 1,
+                        "ad-slot-code-1", 1,
                         1080, 720, Arrays.asList(1, 2),
                         1000
                 )),
@@ -63,7 +63,7 @@ public class SearchTest {
         request.setRequestInfo(new SearchRequest.RequestInfo(
                 "req-2",
                 Collections.singletonList(new AdSlot(
-                        "ad-y", 1,
+                        "ad-slot-code-2", 1,
                         1080, 720, Arrays.asList(1, 2),
                         1000
                 )),

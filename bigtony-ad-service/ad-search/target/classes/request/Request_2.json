@@ -1,0 +1,64 @@
+{
+  "featureInfo": {
+    "districtFeature": {
+      "districts": [
+        {
+          "city": "Boston",
+          "state": "MA"
+        }
+      ]
+    },
+    "itFeature": {
+      "its": [
+        "Family",
+        "Sport"
+      ]
+    },
+    "keywordFeature": {
+      "keywords": [
+        "BMW",
+        "Audi",
+        "Lamborghini"
+      ]
+    },
+    "relation": "AND"
+  },
+  "mediaId": "media-id-test",
+  "requestInfo": {
+    "adSlots": [
+      {
+        "adSlotCode": "ad-y",
+        "height": 720,
+        "minCpm": 1000,
+        "positionType": 1,
+        "type": [
+          1,
+          2
+        ],
+        "width": 1080
+      }
+    ],
+    "app": {
+      "activityName": "video",
+      "appCode": "bigtony-101",
+      "appName": "bigtony-facebook",
+      "packageName": "com.bigtony"
+    },
+    "device": {
+      "deviceCode": "iphone",
+      "displaySize": "1080 720",
+      "ip": "127.0.0.1",
+      "mac": "0xxxxx",
+      "model": "x",
+      "screenSize": "1080 720",
+      "serialName": "123456789"
+    },
+    "geo": {
+      "city": "Boston",
+      "latitude": 42.2,
+      "longitude": -71.05,
+      "state": "MA"
+    },
+    "requestId": "req-2"
+  }
+}
