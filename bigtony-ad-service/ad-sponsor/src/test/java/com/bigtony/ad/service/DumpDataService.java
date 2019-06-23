@@ -20,7 +20,7 @@ import com.bigtony.ad.entity.unit_condition.AdUnitIt;
 import com.bigtony.ad.entity.unit_condition.AdUnitKeyword;
 import com.bigtony.ad.entity.unit_condition.CreativeUnit;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.collections.CollectionUtils;
+//import org.apache.commons.collections.CollectionUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -94,9 +94,9 @@ public class DumpDataService {
         List<AdPlan> adPlans = planRepository.findAllByPlanStatus(
                 CommonStatus.VALID.getStatus()
         );
-        if (CollectionUtils.isEmpty(adPlans)) {
-            return;
-        }
+//        if (CollectionUtils.isEmpty(adPlans)) {
+//            return;
+//        }
         
         List<AdPlanTable> planTables = new ArrayList<>();
         adPlans.forEach(p -> planTables.add(
@@ -126,9 +126,9 @@ public class DumpDataService {
         List<AdUnit> adUnits = unitRepository.findAllByUnitStatus(
                 CommonStatus.VALID.getStatus()
         );
-        if (CollectionUtils.isEmpty(adUnits)) {
-            return;
-        }
+//        if (CollectionUtils.isEmpty(adUnits)) {
+//            return;
+//        }
         
         List<AdUnitTable> unitTables = new ArrayList<>();
         adUnits.forEach(u -> unitTables.add(
@@ -155,9 +155,9 @@ public class DumpDataService {
     private void dumpAdCreativeTable(String fileName) {
         
         List<Creative> creatives = creativeRepository.findAll();
-        if (CollectionUtils.isEmpty(creatives)) {
-            return;
-        }
+//        if (CollectionUtils.isEmpty(creatives)) {
+//            return;
+//        }
         
         List<AdCreativeTable> creativeTables = new ArrayList<>();
         creatives.forEach(c -> creativeTables.add(
@@ -188,9 +188,9 @@ public class DumpDataService {
     private void dumpAdCreativeUnitTable(String fileName) {
         
         List<CreativeUnit> creativeUnits = creativeUnitRepository.findAll();
-        if (CollectionUtils.isEmpty(creativeUnits)) {
-            return;
-        }
+//        if (CollectionUtils.isEmpty(creativeUnits)) {
+//            return;
+//        }
         
         List<AdCreativeUnitTable> creativeUnitTables = new ArrayList<>();
         creativeUnits.forEach(c -> creativeUnitTables.add(
@@ -215,15 +215,15 @@ public class DumpDataService {
     private void dumpAdUnitDistrictTable(String fileName) {
         
         List<AdUnitDistrict> unitDistricts = districtRepository.findAll();
-        if (CollectionUtils.isEmpty(unitDistricts)) {
-            return;
-        }
+//        if (CollectionUtils.isEmpty(unitDistricts)) {
+//            return;
+//        }
         
         List<AdUnitDistrictTable> unitDistrictTables = new ArrayList<>();
         unitDistricts.forEach(d -> unitDistrictTables.add(
                 new AdUnitDistrictTable(
                         d.getUnitId(),
-                        d.getProvince(),
+                        d.getState(),
                         d.getCity()
                 )
         ));
@@ -243,9 +243,9 @@ public class DumpDataService {
     private void dumpAdUnitItTable(String fileName) {
         
         List<AdUnitIt> unitIts = itRepository.findAll();
-        if (CollectionUtils.isEmpty(unitIts)) {
-            return;
-        }
+//        if (CollectionUtils.isEmpty(unitIts)) {
+//            return;
+//        }
         
         List<AdUnitItTable> unitItTables = new ArrayList<>();
         unitIts.forEach(i -> unitItTables.add(
@@ -270,9 +270,9 @@ public class DumpDataService {
     private void dumpAdUnitKeywordTable(String fileName) {
         
         List<AdUnitKeyword> unitKeywords = keywordRepository.findAll();
-        if (CollectionUtils.isEmpty(unitKeywords)) {
-            return;
-        }
+//        if (CollectionUtils.isEmpty(unitKeywords)) {
+//            return;
+//        }
         
         List<AdUnitKeywordTable> unitKeywordTables = new ArrayList<>();
         unitKeywords.forEach(k -> unitKeywordTables.add(

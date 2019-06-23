@@ -1,7 +1,7 @@
 package com.bigtony.ad.dump;
 
 public class DConstant {
-    public static final String DATA_ROOT_DIR = "/tmp/ads-system/";
+    public static final String DATA_ROOT_DIR = "/Users/bigtony/workplace/ads-system/mysql_data/";
     
     public static final String AD_PLAN = "ad_plan.data";
     public static final String AD_UNIT = "ad_unit.data";

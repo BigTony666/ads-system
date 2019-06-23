@@ -93,7 +93,7 @@ CREATE TABLE `ad_unit_it` (
 CREATE TABLE `ad_unit_district` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `unit_id` int(11) NOT NULL COMMENT 'Unit id',
-  `province` varchar(30) NOT NULL COMMENT 'State',
+  `state` varchar(30) NOT NULL COMMENT 'State',
   `city` varchar(30) NOT NULL COMMENT 'City',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COMMENT='Promotion Unit Region Feature';

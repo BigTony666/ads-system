@@ -148,7 +148,7 @@ public class AdUnitServiceImpl implements IAdUnitService {
 
         List<AdUnitDistrict> unitDistricts = new ArrayList<>();
         request.getUnitDistricts().forEach(d -> unitDistricts.add(
-                new AdUnitDistrict(d.getUnitId(), d.getProvince(),
+                new AdUnitDistrict(d.getUnitId(), d.getState(),
                         d.getCity())
         ));
         List<Long> ids = unitDistrictRepository.saveAll(unitDistricts)
