@@ -18,3 +18,10 @@ Thus, for Map structure, we use **ConcurrentHashMap**. For Set structure, we use
 
 - **information_schema** is a database that MySQL has by itself. It contains the information of other databases and tables.
 
+## Resource
+
+- [Building a real-time user action counting system for ads](https://medium.com/@Pinterest_Engineering/building-a-real-time-user-action-counting-system-for-ads-88a60d9c9a)
+
+- [How did you know this ad would be relevant for me?](https://www.slideshare.net/Hadoop_Summit/how-did-you-know-this-ad-would-be-relevant-for-me)
+
+- [What is real time bidding?](https://www.zhihu.com/question/21930953)

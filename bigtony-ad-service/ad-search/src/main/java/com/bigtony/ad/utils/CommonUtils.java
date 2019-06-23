@@ -30,7 +30,7 @@ public class CommonUtils {
         return result.toString();
     }
     
-    // Tue Jan 01 08:00:00 CST 2019
+    // Mon Dec 31 19:00:00 EST 2018
     public static Date parseStringDate(String dateString) {
         
         try {
@@ -41,7 +41,7 @@ public class CommonUtils {
             );
             return DateUtils.addHours(
                     dateFormat.parse(dateString),
-                    -8
+                    5
             );
             
         } catch (ParseException ex) {

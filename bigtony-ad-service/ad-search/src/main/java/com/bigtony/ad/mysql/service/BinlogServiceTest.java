@@ -9,7 +9,15 @@ import com.github.shyiko.mysql.binlog.event.WriteRowsEventData;
 public class BinlogServiceTest {
     
     public static void main(String[] args) throws Exception {
-        
+    
+        /**
+         *
+         * Write---------------
+         * WriteRowsEventData{tableId=105, includedColumns={0, 1, 2, 3, 4, 5, 6, 7}, rows=[
+         *     [10, 10, plan, 1, Mon Dec 31 19:00:00 EST 2018, Mon Dec 31 19:00:00 EST 2018, Mon Dec 31 19:00:00 EST 2018, Mon Dec 31 19:00:00 EST 2018]
+         * ]}
+         */
+    
         BinaryLogClient client = new BinaryLogClient(
                 "127.0.0.1",
                 3306,
